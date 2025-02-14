@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ClipboardCopy } from "lucide-react";
 import logo from "@/assets/PL-LOGO4.png";
+import "@/index.css";
 
 export default function CouponGenerator() {
   const [name, setName] = useState("");
@@ -22,7 +23,7 @@ export default function CouponGenerator() {
   };
 
   return (
-    <div className="flex flex-col items-center p-6 gap-4">
+    <div className="flex flex-col items-center p-6 gap-4 bg-transparent">
       <Card className="w-full max-w-md p-4">
         <CardContent className="flex flex-col gap-4 items-center">
         <img src={logo} alt="Logo" className="w-auto h-28 m-5" />
